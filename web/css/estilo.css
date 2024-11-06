@@ -1,0 +1,332 @@
+html,
+body {
+    height: 100%;
+    margin:0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* background-color:#1199288e !important; */
+    background-image: url(https://i.imgur.com/gQ9QHFE.jpg) !important;
+}
+
+body,
+p {
+    color: white !important;
+}
+
+.center-card{
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
+nav{
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.navbar-default,
+.box,
+footer {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.box{
+    margin-bottom: 1% !important;
+    border-radius: 25px;
+}
+
+
+/*efecto boton*/
+
+.logo img{
+    box-shadow: inset;
+    max-width: 100px;
+    max-height: auto;
+    filter: drop-shadow(0px 0px 12px grey);
+}
+
+.wrapper {
+    margin-top: 90px;
+    border-radius: 10px;
+
+}
+
+.wrapper2 {
+    margin-top: 90px;
+    border-radius: 10px;
+
+}
+
+/*#wrapper{
+    padding: 200px 6%;
+}
+
+#wrapper > div{
+    width: 280px;
+    margin:0 auto;
+}*/
+
+a.boton {
+    position: relative;
+    display: block;
+    padding: 25px 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 320px;
+    height: 65px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    letter-spacing: 2px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: all ease 0.5s;
+    background: #000000a2;
+}
+
+a.boton:after,
+a.boton:before {
+    width: 90px;
+    height: 200px;
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    transform: rotate(45deg);
+    top: -60px;
+    position: absolute;
+    transition: none;
+    right: -45%;
+    cursor: pointer;
+}
+
+a.boton:before {
+    left: -48%;
+}
+
+a.boton:hover {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    background: #313131a2;
+}
+
+a.boton:hover:after,
+a.boton:hover:before {
+    transform: rotate(45deg), scaleX(130%);
+    background: rgba(255, 255, 255, 0.1);
+    transition: all ease 0.5s;
+}
+
+a.boton:hover:after {
+    right: 130%;
+}
+
+a.boton:hover:before {
+    left: 130%;
+}
+
+/**/
+button.enviar {
+    margin-left: 93.5%;
+    margin-top: 15px;
+}
+
+.box-title{
+    background-color: #77777798;
+    padding: 30px 15px;
+    margin-bottom: 1%;
+    border-radius: 25px;
+}
+
+.margin-top-info{
+    margin-top: 3%;
+}
+
+.info-peli b{
+    /* background-color:rgba(80, 80, 80, 0.692); */
+    font-family: 'Open Sans', sans-serif; /* Utiliza una fuente moderna y legible */
+    font-size: 2rem;
+    color: #ffffff; /* Color de texto oscuro para buen contraste */
+
+}
+
+.info-peli-img{
+    margin-top: 5%;
+}
+
+.info-peli-img img{
+    border-radius: 25px;
+
+}
+
+.img-efecto1 {
+    display: block;
+    /* width: 100%; */ /* Ajusta según tus necesidades */
+    /* transition: transform .5s; */
+}
+
+.img-efecto1:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+    opacity: 1;
+    z-index: 1;
+}
+/*vista datos admin*/
+.table-header{
+    color:#1679C6;
+    background-color:#0E0E0E;
+}
+
+.table-row{
+    /* color: #fff; */
+    background-color: blue;
+}
+
+.view-create{
+    background-color: #0e0e0e56;
+    color:#fff;
+}
+
+/* Aplica el estilo a todos los labels de los campos */ 
+.field-peliculas-cod_pelicula .control-label, .field-peliculas-nombre .control-label, .field-peliculas-presupuesto .control-label, 
+.field-peliculas-n_portagonistas .control-label, .field-peliculas-sinopsis .control-label, .field-peliculas-premios_ganados .control-label, .field-peliculas-calificacion .control-label { 
+
+}
+/* Aplica el estilo a todos los inputs de los campos */ 
+.field-peliculas-cod_pelicula .form-control, .field-peliculas-nombre .form-control, .field-peliculas-presupuesto .form-control, 
+.field-peliculas-n_portagonistas .form-control, .field-peliculas-sinopsis .form-control, .field-peliculas-premios_ganados .form-control, .field-peliculas-calificacion .form-control { 
+
+}
+
+.form-container { 
+    display: flex; flex-direction: column; 
+} 
+.form-group { 
+    display: flex; align-items:center; 
+} 
+.form-group .control-label { 
+    min-width: 150px; /* Ancho mínimo para los labels */ 
+    margin-right: 20px; /* Espacio entre label y input */ 
+} 
+.form-group .form-control { 
+    margin-bottom: 5px;    
+    flex-grow: 1; /* Asegura que los inputs tomen el espacio restante */ 
+    max-width: 100%; /* Ancho máximo para los inputs, ajusta según sea necesario */
+}
+
+/*view details*/
+.view-v1 {
+    margin-bottom: 20px; /* Espacio entre cada grupo de elementos */
+    padding: 20px; /* Añade espacio dentro del contenedor */
+}
+
+.view-v1 hr { display: none; /* Ocultar elementos `<hr>` si se están usando */ }
+
+.view-v1 .table th, 
+.view-v1 .table td {
+    padding: 15px; /* Añade espacio alrededor de los datos */
+    border-bottom: none;
+}
+
+.view-v1 .table {
+    border-spacing: 10px; /* Espaciado entre celdas */
+}
+
+.view-v1 .table th::after, .view-v1 .table td::after { 
+    content: none; /* Remueve los pseudo-elementos que pueden estar generando líneas */ 
+}
+
+
+/*Posicionamientos
+*/
+.d-flex {
+    display: flex !important; /* Asegura la flexión */
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.h-100-index {
+    height: 400px !important;
+}
+
+.h-100-admin{
+    height:250px;
+}
+/*Formulario contacto*/
+p{
+    margin-bottom: 20px;
+    line-height: 1.5
+}
+
+.site-contact h1 {
+    text-align:left;
+    margin-bottom: 20px;
+}
+
+.site-contact .form-group {
+    margin-bottom: 20px;
+}
+
+.site-contact .form-control {
+    width: 100%;
+}
+
+.site-contact .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+  
+/*valoracion*/
+
+
+
+/**/
+/*.img1{
+    margin-top: 20px; 
+    float: right; 
+    margin-left: 75%;
+    min-width: 250px;
+    background: inherit;
+}*/
+
+/*.infopeli{
+    margin-bottom: 45px; 
+    margin-top: 0px;
+    min-width: 250px;
+    width: 800px;
+    height: 520px;
+    height: 400px;
+    background: pink ;
+    
+}*/
+
+/*.valora{
+   float: right; 
+   margin-top: 35px; 
+   background: inherit;  
+   margin-right: 0px; 
+}*/
